@@ -1,0 +1,410 @@
+╔══════════════════════════════════════════════════════════════════╗
+║           W . E . B . S  —  AI OPERATING SYSTEM                ║
+║              Created by Mister Nossair Zaidi                    ║
+╚══════════════════════════════════════════════════════════════════╝
+
+🤖 W.E.B.S is a Jarvis-inspired personal AI operating system built
+in Python. It features a full-screen animated HUD face, voice I/O,
+desktop automation, web browsing, file management, and multi-provider
+LLM support — all orchestrated by a modular, event-driven brain.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 PROJECT STRUCTURE
+━━━━━━━━━━━━━━━━━━━━
+
+WEBS/
+├── 🧠 brain/              — AI core (orchestrator, providers, memory, tools)
+├── ⚡ automation/          — Desktop, browser, filesystem, search, image gen
+├── 🗣️ brain/voice/        — Speech-to-text, text-to-speech, audio engine
+├── 🎨 webs_face.py        — Full-screen Jarvis HUD (pygame)
+├── 💬 chat.py             — Rich CLI chat interface
+├── 🚀 run_webs.py         — Primary launcher (text/voice/hotkey/face)
+├── 🌐 webs.py             — CLI launcher
+├── 🔧 scripts/            — Hotkey listener, systemd autostart, daemon
+├── 🧩 communication/      — Chat, commands, voice wrappers
+├── 📊 data/               — SQLite DB, learner, evolution, dispatcher
+├── 🗂️ memory/             — Conversation history, preferences
+├── 🖼️ generated_images/   — AI-generated images
+├── 🎤 voices/piper/       — Piper TTS voice models (British)
+├── 📋 logs/               — Application logs
+└── 🔑 .env                — API keys
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧠 THE BRAIN — Central Orchestrator
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+The Brain class (~900 lines) is the core controller that:
+
+  1️⃣  🔌 Initializes all subsystems (EventBus, StateManager, Memory,
+     Cache, ModelManager, PromptManager, Tools, Planner, Learner,
+     Dispatcher, Evolver)
+
+  2️⃣  📥 Processes user input via brain.process(user_input):
+     • Stores message in memory
+     • Detects actions via regex pattern matching
+     • Executes actions (open apps, files, research, web, mouse/keyboard)
+     • Builds system prompt with live context + tools + learner + memory
+     • Sends messages to the active LLM provider
+     • Stores response and auto-speaks if voice is active
+     • Publishes events for UI updates
+
+  3️⃣  🔗 Supports compound commands:
+     "research snakes and put it in a file called report.txt and open it"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 ACTION DETECTION — Regex-Based NLU
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+48 action types with 50+ regex patterns:
+
+  📂 FILE OPS     create, read, delete, copy, move, rename,
+                  compress, extract
+
+  🖥️ APP OPS      open/close (firefox, chrome, spotify, discord, etc.)
+
+  🖱️ DESKTOP      mouse move/click/scroll, keyboard type/press/hotkey
+
+  🌐 WEB          browse, search, open news, web task
+
+  🧠 MEMORY       remember, remind
+
+  🔍 RESEARCH     full research reports with live search
+
+  🖼️ IMAGES       generate images via Pollinations AI
+
+  ⌨️ COMMANDS      run terminal commands
+
+  📝 NOTES/TASKS  create notes, add/complete tasks
+
+  🔗 COMPOUND     splits on "and" / "then" for chained commands
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🤖 AI PROVIDERS — Multi-Backend Support
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Priority: Groq > Ollama > Puter > Dummy
+
+  ⚡ Groq (online)       — Groq REST API, llama-3.3-70b-versatile
+  🏠 Ollama (offline)    — Local inference, llama3.2:3b
+  🆓 Puter (free)        — Node.js bridge to puter.com, Gemini models
+  🧪 Dummy               — Demo responses for testing
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎨 JARVIS HUD FACE — Full-Screen Animated Interface
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+680 lines of pygame magic:
+
+  💫 Pulsing orange core with gradient and glow
+  🔄 Rotating arc segments (3 rings, different speeds/colors)
+  ⬡ Rotating hexagonal frames (double-hex, counter-rotating)
+  ✨ 140 floating particles with wobble physics
+  📊 40 audio visualizer bars at the bottom
+  🔍 Scan line with trailing glow
+  🌑 Vignette overlay for cinematic depth
+  📐 HUD corner brackets and brand text
+  💬 Chat input box at the bottom
+  📄 Response display (top-left, fades out)
+  📍 Mode indicator (IDLE / THINKING / LISTENING / SPEAKING)
+  📝 Status text and key hints
+
+  All visuals react to audio_energy:
+    💤 IDLE       → calm, minimal energy
+    🤔 THINKING   → medium pulse, faster particles
+    🎤 LISTENING  → rhythmic energy
+    🔊 SPEAKING   → high energy bars, maximum pulse
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🗣️ VOICE SYSTEM — Full Voice I/O
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+  🎤 SPEECH-TO-TEXT (stt.py)
+     Dual backend with automatic fallback:
+     1. faster-whisper (primary) — Local Whisper, CPU int8
+     2. SpeechRecognition + Google (fallback) — Online STT
+     • Automatic ALSA capture unmute
+     • PulseAudio device discovery
+     • Ambient noise calibration
+     • Wake word detection (optional)
+     • Continuous listening or single listen_once()
+
+  🔊 TEXT-TO-SPEECH (tts.py)
+     Piper TTS — fast, offline, British voice:
+     • Model: en_GB-alan-medium (Piper ONNX)
+     • Voice presets: default, alfred, jarvis, british
+     • Faster speech (length_scale=0.82), natural noise
+
+  🎛️ VOICE ENGINE (engine.py)
+     High-level orchestrator:
+     • Async speak queue (background thread)
+     • speak() (blocking) and speak_async() (queued)
+     • Voice profile management
+
+  🔔 SPEAKER (speaker.py)
+     Event-driven auto-speaker:
+     • Subscribes to BRAIN_RESPONDING events
+     • Automatically speaks every response
+     • Publishes VOICE_SPEAKING / VOICE_IDLE for face reactivity
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🧠 INTELLIGENCE MODULES
+━━━━━━━━━━━━━━━━━━━━━━━━
+
+  📋 PLANNER (brain/planner.py)
+     Analyzes user intent without executing anything:
+     • Classifies: conversation / information / automation / memory
+     • Detects required tools: browser, filesystem, media, system, web
+     • Flags dangerous actions for confirmation
+     • Produces a structured Plan dataclass
+
+  🏷️ MESSAGE ROUTER (brain/routing.py)
+     Classifies messages into types:
+     • Casual: greetings, thanks, ok, lol
+     • Work: build, fix, deploy, search, code
+     • Command: open, close, list, set, send
+     • Question: anything with ?
+     • should_use_fast_model() — routes casual to cheaper models
+
+  📈 USAGE LEARNER (brain/learner.py)
+     Tracks usage patterns:
+     • Logs every task (type, description, project, success)
+     • Fuzzy-matches project names with recency + frequency boosting
+     • Provides context for LLM: "Frequent tasks: search(12), build(5)"
+     • Session stats: task count, success rate, elapsed time
+
+  🧬 TEMPLATE EVOLVER (brain/evolution.py)
+     Self-improvement from failures:
+     • Logs failures with pattern detection
+     • After 3+ failures, generates prevention rules
+     • Injects lessons into LLM: "LESSONS LEARNED: Prevent missing_import..."
+
+  📡 DISPATCHER (brain/dispatcher.py)
+     Tracks in-flight automation tasks:
+     • Task lifecycle: PENDING → RUNNING → COMPLETED/FAILED
+     • JSON persistence
+     • Formats active/recent tasks for LLM context
+
+  💡 SUGGESTIONS (brain/suggestions.py)
+     Post-task heuristics (no LLM calls):
+     • Missing tests → "Want me to add some?"
+     • Missing README → "Shall I create one?"
+     • Missing requirements.txt → "Want me to generate one?"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💾 MEMORY SYSTEM
+━━━━━━━━━━━━━━━━
+
+  📝 IN-MEMORY (brain/memory.py)
+     Simple JSON-backed storage:
+     • Conversation history (role/content)
+     • User preferences (key/value)
+     • Auto-saves to memory/history.json and preferences.json
+
+  🗄️ SQLITE MEMORY (brain/memory_sqlite.py)
+     Persistent memory with FTS5 full-text search:
+     • memories table — facts with importance, FTS5 indexed
+     • tasks table — todo items with priority, status, due dates
+     • notes table — topic/content notes
+     • Auto-synced FTS triggers for real-time search
+     • build_context() injects key facts + tasks into LLM prompts
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ AUTOMATION LAYER
+━━━━━━━━━━━━━━━━━━━
+
+  🖥️ APPLICATIONS (applications.py)
+     Open/close/check/focus applications via subprocess + wmctrl
+
+  📁 FILESYSTEM (filesystem.py) — 306 lines
+     Complete file management: create, delete, read, write,
+     copy, move, rename, list, search, compress, extract
+
+  ⌨️ TERMINAL (terminal.py)
+     Run commands (sync/background), get output, stop processes,
+     sudo support with password piping
+
+  🖱️ DESKTOP (desktop.py)
+     Full input control: move, click, double-click, right-click,
+     drag, scroll, type, press keys, hotkeys, screenshot
+
+  🌐 BROWSER (browser.py)
+     Navigation, interaction, form ops, screenshots
+     (Placeholder for Selenium/Playwright)
+
+  🤖 WEB AGENT (web_agent.py)
+     AI browser agent using browser-use + LangChain Groq
+     Falls back to opening Google search
+
+  🔍 LIVE SEARCH (live_search.py)
+     Always-current search without API keys:
+     • Google News RSS for news
+     • DuckDuckGo HTML for web results
+     • Builds "live briefing" text for LLM context
+     • Detects queries needing fresh data
+     • Always injects current date/time
+
+  🖼️ IMAGE GEN (image_gen.py)
+     Uses Pollinations AI (free, no API key):
+     • Text-to-image via URL
+     • Square/landscape/portrait modes
+     • Auto-saves and opens in viewer
+
+  📰 NEWS (news.py)
+     Opens news sites, searches topics, fetches headlines
+
+  🌐 NETWORK (network.py)
+     HTTP GET, file download, internet connection check
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔧 INFRASTRUCTURE
+━━━━━━━━━━━━━━━━━━
+
+  📡 EVENT BUS (brain/event_bus.py)
+     Thread-safe pub/sub system:
+     • 25+ event types (system, brain, planner, voice, memory)
+     • Background processing thread (10ms poll)
+     • Wildcard + typed subscribers
+
+  🔄 STATE MANAGER (brain/state.py)
+     Finite state machine:
+     • States: IDLE, INITIALIZING, LISTENING, THINKING, SEARCHING,
+       FETCHING, EXECUTING, SPEAKING, WAITING, ERROR, SLEEPING
+     • State history with duration tracking
+
+  💾 CACHE (brain/cache.py)
+     LRU cache with TTL:
+     • Max 500 entries, 1-hour TTL
+     • Thread-safe, hit/miss/eviction stats
+
+  👤 SESSION MANAGER (brain/session.py)
+     User session tracking:
+     • UUID-based sessions with active/paused/ended
+     • Max 100 sessions with auto cleanup
+
+  🔧 TOOL REGISTRY (brain/tools.py)
+     Decorator-based tool registration:
+     • Auto-extracts parameter info from function signatures
+     • Supports async tools
+     • 7 categories: SEARCH, WEB, AUTOMATION, FILE, SYSTEM, UTILITY, AI
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📜 PROMPTS
+━━━━━━━━━━
+
+Modular prompt system loaded from brain/prompts/:
+  📄 system.txt       — Core system prompt
+  🎭 personality.txt  — Character/personality
+  📏 rules.txt        — Behavioral rules
+  🛠️ capabilities.txt — What W.E.B.S can do
+  📐 format.txt       — Output formatting
+
+Dynamically injected:
+  • Tool list (auto-generated from registry)
+  • Learner context (frequent tasks, recent projects)
+  • Evolution rules (lessons from past failures)
+  • Live context (current date/time + news search)
+  • SQLite memory (key facts + open tasks)
+  • Dispatcher status (active/recent tasks)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🔑 MODES OF OPERATION
+━━━━━━━━━━━━━━━━━━━━━━
+
+  💬 TEXT MODE        python3 run_webs.py
+                      Interactive text chat loop
+
+  🎤 VOICE MODE       python3 run_webs.py --voice
+                      Continuous voice: listen → process → speak
+
+  ⌨️ HOTKEY MODE       python3 run_webs.py --hotkey
+                      W+V to talk, or type anytime
+
+  🎨 FACE MODE         python3 run_webs.py --face
+                      Orange Jarvis HUD (fullscreen)
+
+  🎨🎤 FACE+VOICE      python3 run_webs.py --face --voice
+                      Jarvis HUD + mic (W+V)
+
+  🖥️ WINDOWED          python3 run_webs.py --face --windowed
+                      Windowed HUD for development
+
+  📝 SINGLE SHOT       python3 webs.py -m "your message"
+                      Send one message and exit
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📊 PROJECT STATISTICS
+━━━━━━━━━━━━━━━━━━━━━
+
+  📁 Total Python files      ~50
+  📝 Total lines of code     ~7,500+
+  🎯 Action types            48
+  🔧 Registered tools        30+
+  🤖 AI providers            4 (Groq, Ollama, Puter, Dummy)
+  📡 Event types             25+
+  📦 Dependencies            11
+
+  📦 DEPENDENCIES:
+     • requests         — HTTP client
+     • piper-tts        — Fast offline TTS
+     • numpy            — Audio processing
+     • sounddevice      — Microphone input
+     • faster-whisper   — Local speech recognition
+     • langchain-groq   — Groq LLM integration
+     • browser-use      — AI browser automation
+     • playwright       — Browser engine
+     • SpeechRecognition — Google STT fallback
+     • pynput           — Global hotkey listener
+     • pygame-ce        — Jarvis HUD rendering
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏆 KEY FEATURES SUMMARY
+━━━━━━━━━━━━━━━━━━━━━━━
+
+  ✅ Full-screen animated Jarvis-style HUD face
+  ✅ Voice input (faster-whisper + Google fallback)
+  ✅ Voice output (Piper TTS, British voice)
+  ✅ Global W+V hotkey for voice activation
+  ✅ Multi-provider AI (Groq / Ollama / Puter / Dummy)
+  ✅ 30+ registered automation tools
+  ✅ Natural language action detection (48 types)
+  ✅ Compound command chaining ("research X and save to file")
+  ✅ Live web search (Google News RSS + DuckDuckGo)
+  ✅ AI browser agent (browser-use + LangChain)
+  ✅ File system operations (create/read/write/delete/compress)
+  ✅ Desktop automation (mouse/keyboard control)
+  ✅ App management (open/close/check)
+  ✅ Image generation (Pollinations AI, free)
+  ✅ News automation (BBC, CNN, Google News, etc.)
+  ✅ SQLite memory with FTS5 full-text search
+  ✅ Persistent conversation history
+  ✅ Usage learning and pattern tracking
+  ✅ Self-evolving prompts from failure analysis
+  ✅ Proactive follow-up suggestions
+  ✅ Task dispatcher with status tracking
+  ✅ Event-driven architecture (25+ event types)
+  ✅ Thread-safe throughout
+  ✅ Works offline (Ollama + Piper + faster-whisper)
+  ✅ Systemd autostart support
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+          🏗️ Built with ❤️ by Mister Nossair Zaidi
+
+          "W.E.B.S online. How may I assist you, sir?"
+
+╔══════════════════════════════════════════════════════════════════╗
+╚══════════════════════════════════════════════════════════════════╝

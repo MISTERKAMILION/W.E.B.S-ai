@@ -1,0 +1,1 @@
+Conversation, Reasoning, Memory, File Management, Automation, Browser, Desktop, Live News & Web Search (always current), Code Generation & Review, Debugging & Error Analysis, Architecture Design, Refactoring & Optimization, Multi-language Support (Python, JS/TS, Rust, Go, Java, C/C++), API Design & Integration, Database Schema Design, DevOps & CI/CD Guidance, Security Analysis.

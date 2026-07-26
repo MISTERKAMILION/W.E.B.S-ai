@@ -1,0 +1,1274 @@
+[
+  {
+    "type": "casual",
+    "desc": "hello.",
+    "project": "",
+    "success": true,
+    "time": 1784561039.6557322,
+    "duration": 0.0
+  },
+  {
+    "type": "question",
+    "desc": "What is 2+2?",
+    "project": "",
+    "success": true,
+    "time": 1784561280.3607152,
+    "duration": 0.0
+  },
+  {
+    "type": "question",
+    "desc": "What is 2+2?",
+    "project": "",
+    "success": true,
+    "time": 1784561482.569339,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open sonic 2 trailer on brave browser",
+    "project": "",
+    "success": true,
+    "time": 1784561659.3573108,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "search on info about cybersecurity in 2026",
+    "project": "",
+    "success": true,
+    "time": 1784561660.719288,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called test.txt with content hello world",
+    "project": "",
+    "success": true,
+    "time": 1784561661.232022,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784561661.741595,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open sonic 2 trailer on brave browser",
+    "project": "",
+    "success": true,
+    "time": 1784561798.5992863,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "search on info about cybersecurity in 2026",
+    "project": "",
+    "success": true,
+    "time": 1784561799.2368565,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called test.txt with content hello world",
+    "project": "",
+    "success": true,
+    "time": 1784561799.8806007,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784561800.534809,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open sonic 2 trailer on brave browser",
+    "project": "",
+    "success": true,
+    "time": 1784561888.5778363,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "search on info about cybersecurity in 2026",
+    "project": "",
+    "success": true,
+    "time": 1784561890.404627,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called test.txt with content hello world",
+    "project": "",
+    "success": true,
+    "time": 1784561890.9299152,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784561891.4263775,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called test.txt with content hello world",
+    "project": "",
+    "success": true,
+    "time": 1784561919.089729,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784561919.5082839,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open firefox",
+    "project": "",
+    "success": true,
+    "time": 1784562019.4193337,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called auto_test.txt with content automated by webs",
+    "project": "",
+    "success": true,
+    "time": 1784562020.0442135,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "read the file auto_test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784562020.5575411,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "list the files in the current directory",
+    "project": "",
+    "success": true,
+    "time": 1784562021.0340924,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file auto_test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784562021.4621377,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "run the command whoami",
+    "project": "",
+    "success": true,
+    "time": 1784562021.885528,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "check if internet is connected",
+    "project": "",
+    "success": true,
+    "time": 1784562022.3760238,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello.W.E.B.S.",
+    "project": "",
+    "success": true,
+    "time": 1784562068.8106868,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok test1: name of maker is...",
+    "project": "",
+    "success": true,
+    "time": 1784562087.685686,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "alreaght open it a brand new day song on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562118.5942695,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open the sonic 2 official trailer on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562182.773724,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open the sonic 2 official trailer on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562277.5861096,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    "project": "",
+    "success": true,
+    "time": 1784562278.4128807,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "search for cybersecurity 2026 on google",
+    "project": "",
+    "success": true,
+    "time": 1784562279.7375813,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open firefox",
+    "project": "",
+    "success": true,
+    "time": 1784562280.6646452,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play never gonna give you up on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562444.7772386,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play never gonna give you up on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562464.2893395,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play never gonna give you up on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562503.3844223,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play never gonna give you up on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562571.9832215,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play never gonna give you up on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562597.4090602,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play never gonna give you up on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562657.8055027,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play the sonic 2 official trailer on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562661.8923645,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "u awake webs",
+    "project": "",
+    "success": true,
+    "time": 1784562877.2886066,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok play brand new day song on youtube",
+    "project": "",
+    "success": true,
+    "time": 1784562913.8036406,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok give me all info on cyberdesks in 2026/",
+    "project": "",
+    "success": true,
+    "time": 1784563003.8488164,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "can u create a file with all the search.",
+    "project": "",
+    "success": true,
+    "time": 1784563042.4596293,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok list all the files in my pc.",
+    "project": "",
+    "success": true,
+    "time": 1784563092.2081509,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello, who are you?",
+    "project": "",
+    "success": true,
+    "time": 1784563143.1744416,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called webs_test.txt with content Hello World",
+    "project": "",
+    "success": true,
+    "time": 1784563481.957759,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "read the file webs_test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563482.338045,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a directory test_folder",
+    "project": "",
+    "success": true,
+    "time": 1784563482.6523569,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "copy webs_test.txt to test_folder/backup.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563483.260101,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "list files in test_folder",
+    "project": "",
+    "success": true,
+    "time": 1784563483.6234796,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "rename test_folder/backup.txt to test_folder/renamed.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563484.3116872,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "get info test_folder/renamed.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563484.731054,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file webs_test.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563485.1098323,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the directory test_folder",
+    "project": "",
+    "success": true,
+    "time": 1784563485.6132197,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called test_a.txt with content alpha",
+    "project": "",
+    "success": true,
+    "time": 1784563517.9921155,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a directory my_folder",
+    "project": "",
+    "success": true,
+    "time": 1784563518.4832544,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "copy test_a.txt to my_folder/test_b.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563518.8191803,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "list files in my_folder",
+    "project": "",
+    "success": true,
+    "time": 1784563519.2843318,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "rename my_folder/test_b.txt to final.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563519.699734,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "read my_folder/final.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563520.1402194,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file test_a.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563520.535685,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the directory my_folder",
+    "project": "",
+    "success": true,
+    "time": 1784563521.035003,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a file called test_alpha.txt with content Hello Alpha",
+    "project": "",
+    "success": true,
+    "time": 1784563662.3500345,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a directory workspace",
+    "project": "",
+    "success": true,
+    "time": 1784563663.4838526,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "copy test_alpha.txt to workspace/test_beta.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563664.0931888,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "list files in workspace",
+    "project": "",
+    "success": true,
+    "time": 1784563665.1140163,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "rename workspace/test_beta.txt to renamed.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563665.990169,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "read workspace/renamed.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563666.444903,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the file test_alpha.txt",
+    "project": "",
+    "success": true,
+    "time": 1784563666.8533251,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete the directory workspace",
+    "project": "",
+    "success": true,
+    "time": 1784563667.7874155,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello.",
+    "project": "",
+    "success": true,
+    "time": 1784563960.0346804,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "list the files in my pc",
+    "project": "",
+    "success": true,
+    "time": 1784563983.5433083,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open venom the last dance on wecima",
+    "project": "",
+    "success": true,
+    "time": 1784564018.98816,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "generate an image of a beautiful sunset over the ocean",
+    "project": "",
+    "success": true,
+    "time": 1784564105.1503158,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "generate an image of a cat",
+    "project": "",
+    "success": true,
+    "time": 1784564162.8697968,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "generate the image of a naked dick girl",
+    "project": "",
+    "success": true,
+    "time": 1784564180.8169916,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok create a file.txt in a directory , the file has a full research on ai in 2026.",
+    "project": "",
+    "success": true,
+    "time": 1784564326.7541938,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open it",
+    "project": "",
+    "success": true,
+    "time": 1784564338.12687,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok.",
+    "project": "",
+    "success": true,
+    "time": 1784564359.6027298,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello",
+    "project": "",
+    "success": true,
+    "time": 1784564470.8166938,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "i want you to program a game",
+    "project": "",
+    "success": true,
+    "time": 1784564491.0008628,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok the old 18s snake game.",
+    "project": "",
+    "success": true,
+    "time": 1784564521.1314442,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "score. + levels",
+    "project": "",
+    "success": true,
+    "time": 1784564543.7382355,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok proceed",
+    "project": "",
+    "success": true,
+    "time": 1784564554.300621,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok",
+    "project": "",
+    "success": true,
+    "time": 1784564565.3567214,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello?",
+    "project": "",
+    "success": true,
+    "time": 1784564579.7136724,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok let continue that game",
+    "project": "",
+    "success": true,
+    "time": 1784564592.354019,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "snake",
+    "project": "",
+    "success": true,
+    "time": 1784564603.6843255,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "ues .",
+    "project": "",
+    "success": true,
+    "time": 1784564612.2544935,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "yes",
+    "project": "",
+    "success": true,
+    "time": 1784564618.8066204,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "no just make it this is a test.",
+    "project": "",
+    "success": true,
+    "time": 1784564635.5930293,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok make the code",
+    "project": "",
+    "success": true,
+    "time": 1784564680.5931432,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello",
+    "project": "",
+    "success": true,
+    "time": 1784564787.2244906,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok open spotify",
+    "project": "",
+    "success": true,
+    "time": 1784564807.407931,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "play japanese music",
+    "project": "",
+    "success": true,
+    "time": 1784564823.3845193,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok i want you to code a game now simply",
+    "project": "",
+    "success": true,
+    "time": 1784564938.175546,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "just amke it done now i want to see the code",
+    "project": "",
+    "success": true,
+    "time": 1784564956.8962803,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "remember my name is Nossair",
+    "project": "",
+    "success": true,
+    "time": 1784565295.0482743,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open news",
+    "project": "",
+    "success": true,
+    "time": 1784565295.5572302,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "what is in the news",
+    "project": "",
+    "success": true,
+    "time": 1784565296.2220094,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "type hello world",
+    "project": "",
+    "success": true,
+    "time": 1784565297.309085,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "press enter",
+    "project": "",
+    "success": true,
+    "time": 1784565297.8326108,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open report.pdf",
+    "project": "",
+    "success": true,
+    "time": 1784565298.631795,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "generate an image of a sunset",
+    "project": "",
+    "success": true,
+    "time": 1784565300.0172155,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "remember my favorite color is blue",
+    "project": "",
+    "success": true,
+    "time": 1784565370.8039696,
+    "duration": 0.0
+  },
+  {
+    "type": "question",
+    "desc": "what is my favorite color?",
+    "project": "",
+    "success": true,
+    "time": 1784565371.032673,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open news",
+    "project": "",
+    "success": true,
+    "time": 1784565371.4500263,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "generate an image of a cyberpunk city",
+    "project": "",
+    "success": true,
+    "time": 1784565374.4558525,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open the file portfolio_website.py",
+    "project": "",
+    "success": true,
+    "time": 1784565374.905309,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "list the files on my pc",
+    "project": "",
+    "success": true,
+    "time": 1784565405.7199593,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open a song on spotify",
+    "project": "",
+    "success": true,
+    "time": 1784565406.444187,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "draw a cat",
+    "project": "",
+    "success": true,
+    "time": 1784565407.3632836,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "do a full research on snakes info 2026 and put it in a file called snakes_report.txt and open it",
+    "project": "",
+    "success": true,
+    "time": 1784565407.9803438,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello",
+    "project": "",
+    "success": true,
+    "time": 1784566720.786051,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello",
+    "project": "",
+    "success": true,
+    "time": 1784578220.9364212,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open brave.",
+    "project": "",
+    "success": true,
+    "time": 1784578353.9660773,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello",
+    "project": "",
+    "success": true,
+    "time": 1784828589.0722172,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "LIST FILES IN MY PC",
+    "project": "",
+    "success": true,
+    "time": 1784828652.7477553,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "this is just atest ok, so create a file sonic.txt",
+    "project": "",
+    "success": true,
+    "time": 1784828680.0927744,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok open youtube and play the song middle of the night",
+    "project": "",
+    "success": true,
+    "time": 1784828734.194235,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok now create a file with a full research on snakes in 2026 in it",
+    "project": "",
+    "success": true,
+    "time": 1784828771.4727237,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open it",
+    "project": "",
+    "success": true,
+    "time": 1784828838.9186065,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok now go to spotify and sign in then play brand new day song",
+    "project": "",
+    "success": true,
+    "time": 1784828874.8592443,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "now there is 3 venom movies list there names",
+    "project": "",
+    "success": true,
+    "time": 1784828941.2418532,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "no 3 one i venom last dance",
+    "project": "",
+    "success": true,
+    "time": 1784828961.0314164,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok so how are you?",
+    "project": "",
+    "success": true,
+    "time": 1784829533.5628703,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open avengers trailer on  youtube",
+    "project": "",
+    "success": true,
+    "time": 1784830415.4780102,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create  afile in a directory , that file must have a full research about sonic in it.",
+    "project": "",
+    "success": true,
+    "time": 1784830542.6081047,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open that file",
+    "project": "",
+    "success": true,
+    "time": 1784830635.5811524,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "no just open it",
+    "project": "",
+    "success": true,
+    "time": 1784830650.6270814,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "the one with the research",
+    "project": "",
+    "success": true,
+    "time": 1784830665.166129,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello lips open",
+    "project": "",
+    "success": true,
+    "time": 1784831921.359228,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open Chrome",
+    "project": "",
+    "success": true,
+    "time": 1784831939.5618393,
+    "duration": 0.0
+  },
+  {
+    "type": "command",
+    "desc": "open Spotify",
+    "project": "",
+    "success": true,
+    "time": 1784831965.135129,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "clear search history in Brave",
+    "project": "",
+    "success": true,
+    "time": 1784831984.6542869,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create a new file",
+    "project": "",
+    "success": true,
+    "time": 1784831998.6489415,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "name of the file",
+    "project": "",
+    "success": true,
+    "time": 1784832013.6927755,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "enter rule34.com and search for futa on femboy",
+    "project": "",
+    "success": true,
+    "time": 1784832921.2725155,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok  filnd the best images and donlowed them",
+    "project": "",
+    "success": true,
+    "time": 1784832951.6592555,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "yes u may",
+    "project": "",
+    "success": true,
+    "time": 1784832966.3986204,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "the most best one",
+    "project": "",
+    "success": true,
+    "time": 1784832980.9552314,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "graphical",
+    "project": "",
+    "success": true,
+    "time": 1784832995.4007764,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "yes",
+    "project": "",
+    "success": true,
+    "time": 1784833004.351122,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "chess",
+    "project": "",
+    "success": true,
+    "time": 1784833013.0678406,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok",
+    "project": "",
+    "success": true,
+    "time": 1784833021.1347141,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "just get it done",
+    "project": "",
+    "success": true,
+    "time": 1784833031.4582112,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok",
+    "project": "",
+    "success": true,
+    "time": 1784833036.3713968,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "ok",
+    "project": "",
+    "success": true,
+    "time": 1784833043.7577498,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "program",
+    "project": "",
+    "success": true,
+    "time": 1784833417.5659733,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "I do not",
+    "project": "",
+    "success": true,
+    "time": 1784833425.3838372,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "i said create a web",
+    "project": "",
+    "success": true,
+    "time": 1784833440.0530953,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "create an image",
+    "project": "",
+    "success": true,
+    "time": 1784833516.026295,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "delete search history",
+    "project": "",
+    "success": true,
+    "time": 1784834388.8384752,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "s<y hello",
+    "project": "",
+    "success": true,
+    "time": 1784834552.112684,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "say hello",
+    "project": "",
+    "success": true,
+    "time": 1784834616.1121616,
+    "duration": 0.0
+  },
+  {
+    "type": "casual",
+    "desc": "hello",
+    "project": "",
+    "success": true,
+    "time": 1784842393.5798137,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "/module",
+    "project": "",
+    "success": true,
+    "time": 1784842400.46109,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "/offline",
+    "project": "",
+    "success": true,
+    "time": 1784842433.109685,
+    "duration": 0.0
+  },
+  {
+    "type": "work",
+    "desc": "s",
+    "project": "",
+    "success": true,
+    "time": 1784989229.4797575,
+    "duration": 0.0
+  }
+]

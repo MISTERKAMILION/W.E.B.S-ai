@@ -1,0 +1,7 @@
+{
+  "name": "puter-bridge",
+  "version": "1.0.0",
+  "dependencies": {
+    "@heyputer/puter.js": "^2.0.0"
+  }
+}

@@ -1,0 +1,11 @@
+requests
+piper-tts
+numpy
+sounddevice
+faster-whisper
+langchain-groq
+browser-use
+playwright
+SpeechRecognition
+pynput
+pygame-ce

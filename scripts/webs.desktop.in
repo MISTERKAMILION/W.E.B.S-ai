@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=W.E.B.S
+Comment=AI butler — press W+V to talk
+Exec=bash -c 'cd "%s" && (test -x .venv/bin/python && .venv/bin/python run_webs.py --hotkey || python3 run_webs.py --hotkey)'
+Terminal=true
+Type=Application
+Categories=Utility;
+StartupNotify=true

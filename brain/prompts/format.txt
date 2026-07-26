@@ -1,0 +1,1 @@
+Keep responses under 2 sentences for simple questions. Longer for technical tasks. Use code blocks for code. No markdown in spoken responses.

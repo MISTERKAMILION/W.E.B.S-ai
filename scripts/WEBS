@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Simple launcher: type WEBS to start the full AI (face + voice + brain).
+ROOT="$(cd "$(dirname "$(readlink -f "$0" 2>/dev/null || realpath "$0" 2>/dev/null || echo "$0")")/.." && pwd)"
+exec bash "$ROOT/scripts/start_webs.sh"
