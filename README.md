@@ -1,31 +1,79 @@
-### W.E.B.S. (Web Enhanced Butler System)
+# W.E.B.S. — Web Enhanced Butler System
 
-**W.E.B.S.** is a modular AI assistant designed to function as a personal digital butler. It combines conversational intelligence, long-term memory, web research, automation, voice interaction, and local AI models into a single extensible system. Inspired by Alfred from Batman, W.E.B.S. is built to assist with everyday tasks, programming, information gathering, and computer control while maintaining a professional butler personality.
+W.E.B.S. is a modular personal AI assistant built in Python. It brings conversational AI, memory, voice interaction, web research, and desktop automation together behind a command-line interface and an optional animated HUD.
 
-### Core Features
+**Created by Nossair Zaidi · [@MISTERKAMILION](https://github.com/MISTERKAMILION)**
 
-* **AI Brain** – Understands requests, reasons about problems, creates execution plans, and coordinates all modules.
-* **Memory System** – Stores conversations, user preferences, tasks, and collected knowledge for long-term context.
-* **Web Collector** – Searches the internet, reads webpages, documentation, GitHub repositories, and news to provide accurate, up-to-date information.
-* **Automation** – Controls applications, browsers, files, and the operating system to perform real tasks instead of only generating text.
-* **Voice Assistant** – Supports speech recognition and natural text-to-speech for hands-free interaction.
-* **Multi-Model Support** – Works with online models such as Groq as well as local models through Ollama, allowing both online and offline operation.
-* **Extensible Skills** – New capabilities can be added as independent modules without modifying the core architecture.
+## Features
 
-### Architecture
+- **Modular assistant core** that coordinates prompts, tools, memory, and tasks.
+- **Multiple AI providers:** Groq, local Ollama, Puter, and a demo provider (availability depends on configuration).
+- **Voice input and output** with local and online speech options.
+- **Web research** and an optional AI-assisted browser agent.
+- **Desktop and file automation**, including app management, filesystem operations, and keyboard/mouse actions.
+- **Persistent context** through conversation memory, preferences, tasks, and SQLite-backed search.
+- **Animated interface** with text, voice, hotkey, and face modes.
 
-W.E.B.S. follows a modular architecture where each component has a single responsibility:
+## Project structure
 
-* **Brain** – Central coordinator.
-* **Planner** – Breaks goals into executable tasks.
-* **Reasoner** – Decides how problems should be solved.
-* **Memory** – Manages short-term and long-term knowledge.
-* **Collector** – Retrieves information from external sources.
-* **Tool Manager** – Registers and executes available tools.
-* **Automation Layer** – Performs browser and desktop actions.
-* **Voice Engine** – Handles speech input and output.
-* **Model Providers** – Connect to cloud or local language models.
+| Directory / file | Purpose |
+| --- | --- |
+| `brain/` | Orchestration, providers, memory, tools, planning, and events |
+| `automation/` | Desktop, browser, filesystem, search, and image-generation tools |
+| `data/` | Application data and supporting modules |
+| `memory/` | Conversation history and preferences |
+| `scripts/` | Helper scripts and launch support |
+| `voices/` | Voice assets and related resources |
+| `run_webs.py` | Main launcher with selectable modes |
+| `webs.py` | CLI launcher |
+| `webs_face.py` | Animated HUD interface |
+| `requirements.txt` | Python package dependencies |
 
-### Project Goal
+## Requirements
 
-The goal of W.E.B.S. is to create a scalable AI operating system capable of understanding requests, gathering information, making decisions, executing tasks, and continuously expanding its abilities through modular components. Rather than being a simple chatbot, W.E.B.S. is intended to become a complete personal AI companion capable of assisting with research, programming, automation, productivity, and everyday computer interaction.
+- Python 3
+- Packages listed in `requirements.txt`
+- Optional provider credentials or local services (for example, Groq API access or Ollama) for the corresponding AI backend
+- Audio devices and system libraries for voice features; a compatible desktop environment for automation and the HUD
+
+## Setup
+
+1. Clone this repository and enter its directory.
+2. Install the Python dependencies:
+
+   ```bash
+   python -m pip install -r requirements.txt
+   ```
+
+3. Configure the provider and optional service you want to use. Keep credentials out of source control.
+4. Start in text mode:
+
+   ```bash
+   python run_webs.py
+   ```
+
+## Run modes
+
+```bash
+python run_webs.py                 # Text mode
+python run_webs.py --voice         # Voice mode
+python run_webs.py --hotkey        # Hotkey mode
+python run_webs.py --face          # Animated HUD
+python run_webs.py --face --voice  # HUD with voice
+python run_webs.py --face --windowed
+python webs.py -m "your message"   # Single message
+```
+
+Some features require additional setup, such as a browser engine, audio support, a configured model provider, or a supported desktop environment.
+
+## Safety and privacy
+
+W.E.B.S. can interact with the filesystem, applications, browser, and operating system. Review actions before allowing them, and run the assistant with only the permissions it needs. Conversation history, preferences, logs, and generated files may be stored locally. Do not commit API keys, personal data, or other secrets.
+
+## License
+
+Released under the [MIT License](LICENSE).
+
+---
+
+Built by **Nossair Zaidi** · [GitHub: @MISTERKAMILION](https://github.com/MISTERKAMILION)
